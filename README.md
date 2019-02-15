@@ -40,7 +40,8 @@ Read more about bootstrap - https://getbootstrap.com/
 ```
 
 ### .htaccess file to remove the index.php form urls
- ``` <IfModule mod_rewrite.c>
+ ``` 
+    <IfModule mod_rewrite.c>
        RewriteEngine On
        RewriteCond %{REQUEST_FILENAME} !-f
        RewriteCond %{REQUEST_FILENAME} !-d
@@ -48,9 +49,10 @@ Read more about bootstrap - https://getbootstrap.com/
      </IfModule>
 ```
 ### My_Controller.php in application/core
- ```<?php
+ ```
+ <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+  defined('BASEPATH') OR exit('No direct script access allowed');
     use Coolpraz\PhpBlade\PhpBlade;
     class MY_Controller extends CI_Controller {
         protected $views = APPPATH . 'views';
