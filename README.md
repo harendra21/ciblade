@@ -37,6 +37,7 @@ Read more about bootstrap - https://getbootstrap.com/
     <h1>Welcome {{$person_name}}!</h1>
     </body>
     </html>
+```
 
 ### .htaccess file to remove the index.php form urls
  ``` <IfModule mod_rewrite.c>
@@ -45,6 +46,7 @@ Read more about bootstrap - https://getbootstrap.com/
        RewriteCond %{REQUEST_FILENAME} !-d
        RewriteRule ^(.*)$ index.php/$1 [L]
      </IfModule>
+```
 ### My_Controller.php in application/core
  ```<?php
 
@@ -64,3 +66,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             echo $this->blade->view()->make('_parts/footer', $head);
         }
     }
+```
