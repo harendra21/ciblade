@@ -67,3 +67,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
     }
 ```
+### Welcome.php in application/controllers
+```
+  class Welcome extends MY_Controller {
+   public function index(){
+    $head = array();
+    $data = array();
+    $this->front_render('home',$data,$head);
+   }
+  }
+```
+Now create your views with view_name.blade.php
+
+For any query please contact at harendraverma21@gmail.com
