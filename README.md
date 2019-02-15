@@ -2,7 +2,7 @@
 
 This library used Laravel`s blade templating engine to provide the clean php code
 
-### Introduction to blade
+### Introduction to Blade Templating Engine
 
 lade is the simple, yet powerful templating engine provided with Laravel. Unlike other popular PHP templating engines, Blade does not restrict you from using plain PHP code in your views. In fact, all Blade views are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your application.
 
@@ -23,7 +23,7 @@ Read more about bootstrap - https://getbootstrap.com/
 ### Installation Process
 
  1. Clone this repository to your local server by "git clone https://github.com/harendra21/ciblade.git"
- 2. Hit the url by broswer "http://localhost/ciblade"
+ 2. Hit the url by browser "http://localhost/ciblade"
  
  ### Usage
 
@@ -51,7 +51,6 @@ Read more about bootstrap - https://getbootstrap.com/
 ### My_Controller.php in application/core
  ```
  <?php
-
   defined('BASEPATH') OR exit('No direct script access allowed');
     use Coolpraz\PhpBlade\PhpBlade;
     class MY_Controller extends CI_Controller {
